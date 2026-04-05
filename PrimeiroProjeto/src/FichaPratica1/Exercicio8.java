@@ -50,11 +50,11 @@ public class Exercicio8 {
         System.out.println("Introduza os segundos da música 5:");
         musica5s = input.nextInt();
 
-        segundostotal= (musica1m * 60 + musica1s) + (musica2m * 60 + musica2s) + (musica3m * 60 + musica3s) + (musica4m * 60 + musica4s) + (musica5m * 60 + musica5s);
+        segundostotal = (musica1m * 60 + musica1s) + (musica2m * 60 + musica2s) + (musica3m * 60 + musica3s) + (musica4m * 60 + musica4s) + (musica5m * 60 + musica5s);
         horastotal = segundostotal / 3600;
         int resto = segundostotal % 3600;
 
-        minutostotal = resto /60;
+        minutostotal = resto / 60;
         segundostotal = resto % 60;
 
 

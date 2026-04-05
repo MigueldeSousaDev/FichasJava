@@ -16,6 +16,17 @@ public class Exercicio1 {
 
         // 1.
 
+        System.out.println("Insira  valor 1:");
+        num1 = input.nextInt();
+
+        System.out.println("Insira o valor 2:");
+        num2 = input.nextInt();
+
+        if (num1 > num2) {
+            System.out.println("Maior" + num1);
+        } else {
+            System.out.println("Maior" + num2);
+        }
 
     }
 }
