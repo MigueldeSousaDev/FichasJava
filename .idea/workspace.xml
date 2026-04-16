@@ -5,29 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18a5955f-7f1f-4c20-8471-6d1d8cebc054" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica2/Exercicio17.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica2/Exercicios_Complementares/ExercicioC1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica2/Exercicios_Complementares/ExercicioC2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica2/Exercicios_Complementares/ExercicioC3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica2/Exercicios_Complementares/ExercicioC4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica2/Exercicios_Complementares/ExercicioC5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica3/Exercicio1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica3/Exercicio10.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica3/Exercicio11.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica3/Exercicio12.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica3/Exercicio13.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica3/Exercicio2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica3/Exercicio3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica3/Exercicio4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica3/Exercicio5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica3/Exercicio6.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica3/Exercicio7.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica3/Exercicio8.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica3/Exercicio9.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica4/Exercicio1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio10.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio11.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio12.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio9.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica2/Exercicio15.java" beforeDir="false" afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica2/Exercicio15.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica3/Exercicio7_Imprimir_numeros_somatorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica3/Exercicio7_Imprimir_numeros_SOMA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica4/Exercicio4.java" beforeDir="false" afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica4/Exercicio4_Nºs_Primos.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +75,7 @@
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/swd14/OneDrive - CESAE/Ambiente de Trabalho/Professor Vitor/FichasJava",
-    "settings.editor.selected.configurable": "preferences.editor"
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

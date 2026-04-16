@@ -2,7 +2,7 @@ package FichaPratica4;
 
 import java.util.Scanner;
 
-public class Exercicio4 {
+public class Exercicio4_Nºs_Primos {
 
     public static void main(String[] args) {
 

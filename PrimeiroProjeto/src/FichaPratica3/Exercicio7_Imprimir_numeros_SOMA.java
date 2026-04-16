@@ -2,7 +2,7 @@ package FichaPratica3;
 
 import java.util.Scanner;
 
-public class Exercicio7_Imprimir_numeros_somatorio {
+public class Exercicio7_Imprimir_numeros_SOMA {
 
     public static void main(String[] args) {
 
