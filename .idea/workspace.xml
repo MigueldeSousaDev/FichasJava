@@ -5,21 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18a5955f-7f1f-4c20-8471-6d1d8cebc054" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio10.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio11.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio12.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio6.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio7.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio8.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio9.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica6/BibliotecaCuriosidades.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica6/Exercicio2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica3/Exercicio7_Imprimir_numeros_somatorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica3/Exercicio7_Imprimir_numeros_SOMA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica4/Exercicio4.java" beforeDir="false" afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica4/Exercicio4_Nºs_Primos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio7.java" beforeDir="false" afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio8.java" beforeDir="false" afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio8.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,39 +35,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Exercicio1.executor": "Run",
-    "Application.Exercicio10.executor": "Run",
-    "Application.Exercicio11.executor": "Run",
-    "Application.Exercicio12.executor": "Run",
-    "Application.Exercicio13.executor": "Run",
-    "Application.Exercicio16.executor": "Run",
-    "Application.Exercicio17.executor": "Run",
-    "Application.Exercicio2.executor": "Run",
-    "Application.Exercicio3.executor": "Run",
-    "Application.Exercicio4.executor": "Run",
-    "Application.Exercicio5.executor": "Run",
-    "Application.Exercicio6.executor": "Run",
-    "Application.Exercicio7.executor": "Run",
-    "Application.Exercicio8.executor": "Run",
-    "Application.Exercicio9.executor": "Run",
-    "Application.ExercicioC1.executor": "Run",
-    "Application.ExercicioC2.executor": "Run",
-    "Application.ExercicioC3.executor": "Run",
-    "Application.ExercicioC4.executor": "Run",
-    "Application.ExercicioC5.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/swd14/OneDrive - CESAE/Ambiente de Trabalho/Professor Vitor/FichasJava",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Exercicio1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Exercicio10.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Exercicio11.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Exercicio12.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Exercicio13.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Exercicio16.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Exercicio17.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Exercicio2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Exercicio3.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Exercicio4.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Exercicio5.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Exercicio6.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Exercicio7.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Exercicio8.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Exercicio9.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ExercicioC1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ExercicioC2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ExercicioC3.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ExercicioC4.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ExercicioC5.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/swd14/OneDrive - CESAE/Ambiente de Trabalho/Professor Vitor/FichasJava&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
