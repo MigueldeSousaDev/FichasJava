@@ -1,4 +1,4 @@
-package FichaPratica6;
+package FichaPratica6.Ex01;
 
 import java.util.Scanner;
 
@@ -29,10 +29,14 @@ public class BibliotecaCuriosidades {
         boolean idadeUtilizador = false;
         if (idade >= 18) {
             idadeUtilizador = true;
+        } else {
+            return false;
         }
 
         return (idadeUtilizador);
     }
+
+    // if (idade =>18) { return true; }
 
 
 //    b) faseVida(int idade)
@@ -76,15 +80,15 @@ public class BibliotecaCuriosidades {
     public static String capitalPais(String pais) {
         String capital = "";
 
-        if (pais.equals("Portugal")) {
+        if (pais.equalsIgnoreCase("Portugal")) {
             capital = "Lisboa";
-        } else if (pais.equals("Espanha")) {
+        } else if (pais.equalsIgnoreCase("Espanha")) {
             capital = "Madrid";
-        } else if (pais.equals("França")) {
+        } else if (pais.equalsIgnoreCase("França")) {
             capital = "Paris";
         } else if (pais.equals("Itália")) {
-            capital = "Roma";
-        } else if (pais.equals("Alemanha")) {
+            capital = "equalsIgnoreCase";
+        } else if (pais.equalsIgnoreCase("Alemanha")) {
             capital = "Berlim";
         } else {
             capital = "País não encontrado. Verifique se escreveu corretamente.";
@@ -107,24 +111,23 @@ public class BibliotecaCuriosidades {
         // DECLARAR VARIÁVEL
         String estacao = "";
 
-        if ( (mes >=1 && mes <= 2) || mes == 12 ) {
+        if ((mes >= 1 && mes <= 2) || mes == 12) {
             estacao = "Inverno";
         }
-        if ( mes >= 3 && mes <= 5 ) {
+        else if (mes >= 3 && mes <= 5) {
             estacao = "Primavera";
         }
-        if ( mes >= 6 && mes <= 8 ) {
+        else if (mes >= 6 && mes <= 8) {
             estacao = "Verão";
         }
-        if (mes >= 9 && mes <= 11 ) {
+        else if (mes >= 9 && mes <= 11) {
             estacao = "Outono";
         } else {
             estacao = "Mês inválido.";
         }
 
-        return (estacao);
+        return estacao;
     }
-
 
 
 //    e) diaSemana(int dia)
@@ -139,31 +142,61 @@ public class BibliotecaCuriosidades {
 //    Caso o número seja inválido, deve retornar "Dia inválido".
 
 
-    public static String diaSemana(int mes) {
+    public static String diaSemana(int dia) {
 
-    String diasemana;
+        String diastring ="";
 
-    if (diasemana == 1) {
-        diasemana = "Segunda-Feira";
-    }       else if (diasemana == 2 ) {
-            diasemana = "Terça-Feira";
-            } else if (diasemana == 3 ) {
-                diasemana = "Quarta-Feira";
-            } else if (diasemana == 4 ) {
-                diasemana = "Quinta-Feira";
-            } else if (diasemana == 5) {
-                diasemana = "Sexta-Feira";
-            } else if (diasemana == 6) {
-                diasemana = "Sabado";
-            } else if (diasemana == 7) {
-                diasemana = "Domingo";
-            }
-
+        if (dia == 1) {
+            diastring = "Segunda-Feira";
+        } else if (dia == 2) {
+            diastring = "Terça-Feira";
+        } else if (dia == 3) {
+            diastring = "Quarta-Feira";
+        } else if (dia == 4) {
+            diastring = "Quinta-Feira";
+        } else if (dia == 5) {
+            diastring = "Sexta-Feira";
+        } else if (dia == 6) {
+            diastring = "Sabado";
+        } else if (dia == 7) {
+            diastring = "Domingo";
+        } else {
+            System.out.println("Entrada inválida.");
         }
-
-    return (diasemana);
+        return (diastring);
     }
 
 
+//    f) tipoNumero(int num)
+//    A função deve retornar uma String com a classificação do número:
+//     "Positivo" se o número for maior que 0
+//     "Negativo" se o número for menor que 0
+//      "Zero" se o número for igual a 0
+
+    public static String tipoNumero(int num) {
+
+        /** Função que avalia se <b>número é maior, igual ou menor que 0</b> (o que faz a função)
+         * num é o numero do input, retorna o resultado da função
+          */
+
+        String numString = "";
+        if (num > 0) {
+            numString = "Positivo.";
+        } else if ( num < 0) {
+            numString = "Negativo.";
+        } else if (num == 0) {
+            numString = "Zero.";
+        } else {
+            System.out.println("Entrada inválida.");
+        }
+                    return(numString);
+    }
+
 
 }
+
+
+
+
+
+

@@ -2,7 +2,7 @@ package FichaPratica5;
 
 import java.util.Scanner;
 
-public class Exercicio5 {
+public class Exercicio5_Find_Media_Elementos {
 
     public static void main(String[] args) {
 

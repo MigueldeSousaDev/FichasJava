@@ -2,7 +2,7 @@ package FichaPratica5;
 
 import java.util.Scanner;
 
-public class Exercicio4 {
+public class Exercicio4_Menor_Valor {
 
     public static void main(String[] args) {
 

@@ -2,7 +2,7 @@ package FichaPratica5;
 
 import java.util.Scanner;
 
-public class Exercicio7 {
+public class Exercicio7_Encontrar_Par {
 
 
     public static void main(String[] args) {

@@ -5,11 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18a5955f-7f1f-4c20-8471-6d1d8cebc054" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica6/BibliotecaCuriosidades.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica6/Exercicio2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica6/Ex03/Exercicio3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica6/Ex07/BibliotecaDeVetores.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica6/Ex08/Exercicio8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica6/Ex09/BibliotecaMatrizes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica6/Ex10/Exercicio10.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio7.java" beforeDir="false" afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio7.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio8.java" beforeDir="false" afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio1.java" beforeDir="false" afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio1_Ler_Vetores.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio10.java" beforeDir="false" afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio10_Pesquisar_Matrizes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio11.java" beforeDir="false" afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio11_Find_Maior_Menor_Valor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio2.java" beforeDir="false" afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio2_Soma_Vetores.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio3.java" beforeDir="false" afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio3_Find_Maior_Valor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio4.java" beforeDir="false" afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio4_Menor_Valor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio5.java" beforeDir="false" afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio5_Find_Media_Elementos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio6.java" beforeDir="false" afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio6_Find_Valor_Elementos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio7.java" beforeDir="false" afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio7_Encontrar_Par.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio9.java" beforeDir="false" afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio9_Soma_Matrizes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica6/BibliotecaCuriosidades.java" beforeDir="false" afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica6/Ex01/BibliotecaCuriosidades.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica6/Exercicio2.java" beforeDir="false" afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica6/Ex02/Exercicio2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +39,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4,
@@ -81,5 +98,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica6/Ex07/BibliotecaDeVetores.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

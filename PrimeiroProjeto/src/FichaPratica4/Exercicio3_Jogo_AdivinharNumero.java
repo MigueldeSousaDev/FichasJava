@@ -16,7 +16,7 @@ public class Exercicio3_Jogo_AdivinharNumero {
 
         do {
 
-            System.out.println("Insira um valor entre 0 e 100.");
+            System.out.println("Jogador 2: Insira um valor entre 0 e 100.");
             valor2 = input.nextInt();
             contador++;
 

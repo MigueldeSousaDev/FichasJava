@@ -1,10 +1,10 @@
-package FichaPratica6;
+package FichaPratica6.Ex02;
 
 import java.util.Scanner;
 
-import static FichaPratica6.BibliotecaCuriosidades.*;
+import static FichaPratica6.Ex01.BibliotecaCuriosidades.*;
 
-public class Exercicio2 {
+public class Exercicio2_Menu_Opcoes_Funcoes {
 
     public static void main(String[] args) {
 
@@ -51,18 +51,22 @@ public class Exercicio2 {
                 int mes;
                 System.out.println("Indique o mês em formato númerico para descobrir a Estação do Ano.");
                 mes = input.nextInt();
-                System.out.println("A estação do ano é: " + estacaoAno(estacao));
+                System.out.println("A estação do ano é: " + estacaoAno(mes));
             }
             if (opcao == 5) {
                 System.out.println("Mostrar o dia da semana.");
-                String diasemana;
-                int mes;
+                String diastring;
+                int dia;
                 System.out.println("Indique o mês em formato numérico para descobrir o Dia da Semana.");
-                diasemana = input.next();
-                System.out.println("O dia da semana é: " + diaSemana(diasemana));
+                dia = input.nextInt();
+                System.out.println("O dia da semana é: " + diaSemana(dia));
             }
             if (opcao == 6) {
-                System.out.println("Classificar um número.");
+                System.out.println("Classificar um número (positivo e negativo).");
+                int num = 0;
+                System.out.println("Indique o número a classificar: ");
+                num = input.nextInt();
+                System.out.println("O número é " + tipoNumero(num));
             }
             if (opcao == 0 ){
                 System.out.println("Encerrar o programa.");

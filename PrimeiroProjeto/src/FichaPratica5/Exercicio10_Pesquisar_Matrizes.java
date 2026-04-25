@@ -2,7 +2,7 @@ package FichaPratica5;
 
 import java.util.Scanner;
 
-public class Exercicio10 {
+public class Exercicio10_Pesquisar_Matrizes {
 
     public static void main(String[] args) {
 

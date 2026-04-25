@@ -2,7 +2,7 @@ package FichaPratica5;
 
 import java.util.Scanner;
 
-public class Exercicio11 {
+public class Exercicio11_Find_Maior_Menor_Valor {
 
     public static void main(String[] args) {
 
