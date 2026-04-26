@@ -3,8 +3,6 @@ package FichaPratica6.Ex08;
 import java.util.Scanner;
 
 import static FichaPratica6.Ex07.BibliotecaDeVetores.*;
-import static FichaPratica6.Ex07.BibliotecaDeVetores.media;
-import static FichaPratica6.Ex07.BibliotecaDeVetores.media;
 
 public class Ex08_Vetores_Analise_Menu {
 
