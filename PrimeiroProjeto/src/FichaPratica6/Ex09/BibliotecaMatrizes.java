@@ -21,28 +21,70 @@ public class BibliotecaMatrizes {
 
     }
 
-//public static int maiorElemento(int[][] matriz) {
-//
-//    int matriz[][] = new int[0][0];
-//
-//    // Adicionar Valores por ordem ao ciclo
-//    for (int linha = 0 ; linha < matriz.length ; linha++) {
-//        for (int coluna = 0; coluna < matriz.length; coluna++) {
-//            System.out.println("Insira o valor: [" + linha + "][" + coluna +"]");
-//            matriz[linha][coluna] = input.nextInt();
-//        }
-//    }
-//
-//    // Ler valores através do ciclo
-//    for (int linha = 0 ; linha < 3 ; linha++) {
-//        for (int coluna = 0; coluna < 3; coluna++) {
-//            System.out.print(matriz[linha][coluna] + " ");
-//        }
-//        System.out.println();
-//    }
-//
-//    System.out.println("Inserir linha da Matriz: ");
-//    matriz[][] = input.nextInt;
+// --------------------------------------------------------------------------------------
+
+public static int maiorElemento(int[][] matriz) {
+
+    int maior = matriz[0][0];
+
+    // Encontrar o Maior valor do ciclo
+    for (int linha = 0 ; linha < matriz.length ; linha++) {
+        for (int coluna = 0; coluna < matriz[linha].length; coluna++) {
+            if (matriz[linha][coluna] > maior) {
+            maior = matriz[linha][coluna];
+            }
+          }
+        }
+    return maior;
+    }
+
+// -------------------------------------------------------------------------------------
+
+    public static int menorElemento(int[][] matriz) {
+
+        int menor = matriz[0][0];
+
+        // Encontrar o Menor valor do ciclo
+        for (int linha = 0 ; linha < matriz.length ; linha++) {
+            for (int coluna = 0; coluna < matriz[linha].length; coluna++) {
+                if (matriz[linha][coluna] < menor) {
+                    menor = matriz[linha][coluna];
+                }
+            }
+        }
+        return menor;
+    }
+
+// -------------------------------------------------------------------------------------
+
+    public static int somatorio(int[][]matriz) {
+
+    int somatorio = 0;
+
+        // Fazer o somatório dos valores na Matriz
+        for (int linha = 0 ; linha < matriz.length ; linha++) {
+            for (int coluna = 0; coluna < matriz[linha].length; coluna++) {
+                somatorio = somatorio + matriz[linha][coluna];
+                }
+            }
+        return somatorio;
+        }
+
+    // ----------------------------------------------------------------------------------
+
+    public static int media(int[][]matriz) {
+
+
+        // Calcula a média, mas assume que a Matriz tem o mesmo nº de linhas e colunas. Código seria diferente para matrizes irregulares
+
+        int somatorio = somatorio(matriz);
+
+        int media = somatorio / (matriz.length * matriz[0].length);
+
+        return media;
+
+    }
+
 
 }
 

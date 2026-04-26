@@ -74,6 +74,22 @@ public class BibliotecaDeVetores {
         return somatorio;
     }
 
+//-------------------------------------------------------------------------------
+
+//  d) media(int[ ] vetor)
+//  Retorna a média dos elementos do vetor.
+
+    public static double media(int[]vetor){
+
+        int soma = somatorio(vetor);
+
+        double media = soma / vetor.length;
+
+        return media;
+
+
+    }
+
 
 
 }

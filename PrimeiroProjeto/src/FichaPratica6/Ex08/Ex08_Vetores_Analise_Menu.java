@@ -3,6 +3,8 @@ package FichaPratica6.Ex08;
 import java.util.Scanner;
 
 import static FichaPratica6.Ex07.BibliotecaDeVetores.*;
+import static FichaPratica6.Ex07.BibliotecaDeVetores.media;
+import static FichaPratica6.Ex07.BibliotecaDeVetores.media;
 
 public class Ex08_Vetores_Analise_Menu {
 
@@ -72,24 +74,20 @@ public class Ex08_Vetores_Analise_Menu {
                 case 3:
                     System.out.println("Somatório dos Elementos");
 
-                    double metros;
+                    int somatorio = somatorio(vetor);
 
-                    System.out.print("Insira os metros: ");
-                    metros = input.nextDouble();
 
-                    System.out.println("Centímetros convertidos: " + " centímetros.");
+                    System.out.println("O Somatório dos elementos é: " + somatorio);
 
                     break;
 
                 case 4:
                     System.out.println("Média dos Elementos");
 
-                    double cm;
+                    double media = media(vetor);
 
-                    System.out.print("Insira os metros: ");
-                    cm = input.nextDouble();
 
-                    System.out.println("Centímetros convertidos: " + " metros.");
+                    System.out.println("A média dos elementos é: " + media);
 
                     break;
 

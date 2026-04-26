@@ -30,7 +30,7 @@ public class Exercicio11_Find_Maior_Menor_Valor {
 
         // Indicar Maior e Menor Valor na Matriz
 
-        int menor=matriz[0][0], maior=matriz[0][0];
+        int menor = matriz[0][0], maior = matriz[0][0];
 
         for (int linha = 0 ; linha < 3 ; linha++) {
             for (int coluna = 0; coluna < 3; coluna++) {
