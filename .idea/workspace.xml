@@ -5,25 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18a5955f-7f1f-4c20-8471-6d1d8cebc054" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica6/Ex03/Exercicio3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica6/Ex07/BibliotecaDeVetores.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica6/Ex08/Exercicio8.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica6/Ex09/BibliotecaMatrizes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica6/Ex10/Exercicio10.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaExtraFuncoes/BibliotecaFichaExtraFuncoes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaExtraFuncoes/Ex01_Funcao_maiorDe3Nrs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaExtraFuncoes/Exercicio11.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio1.java" beforeDir="false" afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio1_Ler_Vetores.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio10.java" beforeDir="false" afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio10_Pesquisar_Matrizes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio11.java" beforeDir="false" afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio11_Find_Maior_Menor_Valor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio2.java" beforeDir="false" afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio2_Soma_Vetores.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio3.java" beforeDir="false" afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio3_Find_Maior_Valor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio4.java" beforeDir="false" afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio4_Menor_Valor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio5.java" beforeDir="false" afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio5_Find_Media_Elementos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio6.java" beforeDir="false" afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio6_Find_Valor_Elementos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio7.java" beforeDir="false" afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio7_Encontrar_Par.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio9.java" beforeDir="false" afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio9_Soma_Matrizes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica6/BibliotecaCuriosidades.java" beforeDir="false" afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica6/Ex01/BibliotecaCuriosidades.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica6/Exercicio2.java" beforeDir="false" afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica6/Ex02/Exercicio2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio12v2_Diagonal_Matriz_EsqDrt_eSoma.java" beforeDir="false" afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica5/Exercicio12v2_Diagonal_Matriz_EsqDrt_eSoma.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica6/Ex07/BibliotecaDeVetores.java" beforeDir="false" afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica6/Ex07/BibliotecaDeVetores.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica6/Ex08/Ex08_Vetores_Analise_Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica6/Ex08/Ex08_Vetores_Analise_Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica6/Ex09/BibliotecaMatrizes.java" beforeDir="false" afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica6/Ex09/BibliotecaMatrizes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica6/Ex10/Exercicio10_Matrizes.java" beforeDir="false" afterPath="$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica6/Ex10/Exercicio10_Matrizes.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +30,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "MigueldeSousaDev"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/MigueldeSousaDev/FichasJava.git",
+    "accountId": "bed266b3-346b-4e45-b566-8584fbfd6a66"
+  }
+}]]></component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
   </component>
@@ -52,39 +54,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Exercicio1.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Exercicio10.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Exercicio11.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Exercicio12.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Exercicio13.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Exercicio16.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Exercicio17.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Exercicio2.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Exercicio3.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Exercicio4.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Exercicio5.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Exercicio6.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Exercicio7.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Exercicio8.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Exercicio9.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ExercicioC1.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ExercicioC2.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ExercicioC3.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ExercicioC4.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ExercicioC5.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/swd14/OneDrive - CESAE/Ambiente de Trabalho/Professor Vitor/FichasJava&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Ex01_Funcao_maiorDe3Nrs.executor": "Run",
+    "Application.Ex08_Vetores_Analise_Menu.executor": "Run",
+    "Application.Exercicio1.executor": "Run",
+    "Application.Exercicio10.executor": "Run",
+    "Application.Exercicio10_Matrizes.executor": "Run",
+    "Application.Exercicio11.executor": "Run",
+    "Application.Exercicio12.executor": "Run",
+    "Application.Exercicio12v2_Diagonal_Matriz_EsqDrt_eSoma.executor": "Run",
+    "Application.Exercicio13.executor": "Run",
+    "Application.Exercicio16.executor": "Run",
+    "Application.Exercicio17.executor": "Run",
+    "Application.Exercicio2.executor": "Run",
+    "Application.Exercicio3.executor": "Run",
+    "Application.Exercicio4.executor": "Run",
+    "Application.Exercicio5.executor": "Run",
+    "Application.Exercicio6.executor": "Run",
+    "Application.Exercicio7.executor": "Run",
+    "Application.Exercicio8.executor": "Run",
+    "Application.Exercicio9.executor": "Run",
+    "Application.ExercicioC1.executor": "Run",
+    "Application.ExercicioC2.executor": "Run",
+    "Application.ExercicioC3.executor": "Run",
+    "Application.ExercicioC4.executor": "Run",
+    "Application.ExercicioC5.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/swd14/OneDrive - CESAE/Ambiente de Trabalho/Professor Vitor/FichasJava",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -98,16 +104,5 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/PrimeiroProjeto/src/FichaPratica6/Ex07/BibliotecaDeVetores.java</url>
-          <line>66</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

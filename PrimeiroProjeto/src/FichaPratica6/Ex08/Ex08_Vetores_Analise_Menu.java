@@ -92,23 +92,18 @@ public class Ex08_Vetores_Analise_Menu {
                 case 5:
                     System.out.println("Crescente ou Não Crescente");
 
-                    System.out.println("Escreva GBP, USD ou BRL para definir a moeda a ser convertida: \n");
-                    String moedaDestino = input.next();
-
-                    System.out.println("Defina a quantidade em moeda a ser convertida, separada por (,): \n");
-                    double euros = input.nextDouble();
-
-                    System.out.println(euros + " euros são convertidos em " + " " + moedaDestino);
+                    if (crescente(vetor) == false) {
+                        System.out.println("Não é Crescente.");
+                    } else if (crescente(vetor) == true) {
+                        System.out.println("É crescente.");
+                    }
 
                     break;
 
                 case 6:
-                    System.out.println("Quantidade de Pares");
+                    System.out.println("Contar Pares");
 
-                    System.out.println("Insira a quantidade de horas a converter em minutos em (int): ");
-                    int horas = input.nextInt();
-
-                    System.out.println(horas + " horas são " + " minutos.");
+                    System.out.println("Existem " + contarPares(vetor) + " números pares no vetor.");
 
                     break;
 

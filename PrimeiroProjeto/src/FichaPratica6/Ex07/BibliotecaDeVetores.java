@@ -87,7 +87,37 @@ public class BibliotecaDeVetores {
 
         return media;
 
+    }
 
+// ----------------------------------------------------------------------------
+
+//    e) crescente(int[ ] vetor)
+//    Retorna true se o vetor estiver por ordem crescente e false caso contrário.
+
+    public static boolean crescente(int[]vetor) {
+
+        for ( int i = 1; i < vetor.length; i++) {
+            if ( vetor[i] < vetor[i-1]) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+// ----------------------------------------------------------------------------
+
+//  f) contarPares(int[ ] vetor)
+//  Retorna a quantidade de números pares existentes no vetor.
+
+    public static int contarPares(int[]vetor) {
+
+        int contador = 0;
+        for ( int i = 0; i < vetor.length; i++) {
+            if (vetor[i] % 2 == 0) {
+                contador++;
+            }
+        }
+        return contador;
     }
 
 

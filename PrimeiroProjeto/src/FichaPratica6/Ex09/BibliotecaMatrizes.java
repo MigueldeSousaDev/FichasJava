@@ -61,7 +61,7 @@ public static int maiorElemento(int[][] matriz) {
 
     int somatorio = 0;
 
-        // Fazer o somatório dos valores na Matriz
+// Fazer o somatório dos valores na Matriz
         for (int linha = 0 ; linha < matriz.length ; linha++) {
             for (int coluna = 0; coluna < matriz[linha].length; coluna++) {
                 somatorio = somatorio + matriz[linha][coluna];
@@ -75,7 +75,7 @@ public static int maiorElemento(int[][] matriz) {
     public static int media(int[][]matriz) {
 
 
-        // Calcula a média, mas assume que a Matriz tem o mesmo nº de linhas e colunas. Código seria diferente para matrizes irregulares
+// Calcula a média, mas assume que a Matriz tem o mesmo nº de linhas e colunas. Código seria diferente para matrizes irregulares
 
         int somatorio = somatorio(matriz);
 
@@ -84,6 +84,60 @@ public static int maiorElemento(int[][] matriz) {
         return media;
 
     }
+
+    public static int somaDiagonalPrincipal(int[][]matriz) {
+
+// Retorna a soma dos elementos da diagonal principal da matriz. Nota: considerar apenas matrizes quadradas.
+
+    // Determina a Diagonal com um ciclo for que avança posições
+
+        int soma = 0;
+
+        for (int i = 0; i< matriz.length; i++){
+            // Linha abaixo está a dar print mas podia ser anulada
+            System.out.println(matriz[i][i]);
+            soma = soma + matriz[i][i];
+        }
+
+        return soma;
+    }
+
+// ------------------------------------------------------------------------
+
+    public static int contarPares(int[][]matriz) {
+// Retorna a quantidade de números pares existentes na matriz.
+
+    // Criar função > Contar Pares na Matriz
+
+    int quantidadePares = 0;
+
+    for (int i = 0; i <matriz.length; i++ ) {
+        for (int j = 0; j <matriz[0].length; j++) {
+            if (matriz[i][j] % 2 == 0) {
+                quantidadePares++;
+            }
+        }
+    }
+
+    return quantidadePares;
+
+    }
+
+// ---------------------------------------------------------------
+
+    public static boolean existeValor(int[][]matriz, int valor) {
+
+        for (int i = 0 ; i < matriz.length; i++) {
+            for (int j = 0 ; j < matriz[0].length; j++) {
+                if (matriz[i][j] == valor) {
+                    return true;
+                }
+            }
+        }
+
+        return false;
+    }
+
 
 
 }

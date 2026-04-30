@@ -76,19 +76,35 @@ public class Exercicio10_Matrizes {
 
                         case 5:
                             if (linhas == colunas) {
-                                System.out.println("Soma da diagonal: " );
+                                System.out.println("Soma da Diagonal Principal: " );
+
+                                System.out.println("A soma da Diagonal Principal é: " + somaDiagonalPrincipal(matriz));
+
                             } else {
-                                System.out.println("A matriz não é quadrada.");
+                                System.out.println("A matriz não é Quadrada.");
                             }
                             break;
 
                         case 6:
-                            System.out.println("Quantidade de pares: " );
+                            System.out.println("Quantidade de Pares: " );
+
+                            System.out.println("A quantidade de Pares na matriz é: " + contarPares(matriz));
+
                             break;
 
                         case 7:
                             System.out.print("Valor a procurar: ");
 
+                            System.out.println("Insira o valor a pesquisar na Matriz: ");
+
+                            int valor = input.nextInt();
+
+                            // bastava (existeValor(matriz, valor) porque ele assume que vai fazer o return da BOOLEAN, que é o esperado na declaração da função.
+                            if (existeValor(matriz, valor)==true) {
+                                System.out.println("O valor foi encontrado.");
+                            } else {
+                                System.out.println("O valor não foi encontrado.");
+                            }
 
                             break;
 
