@@ -3,7 +3,6 @@ package FichaPratica7;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 
@@ -126,7 +125,7 @@ public class BibliotecaDeFicheiros {
 //--------------------------------------------------------------------------------------
     //--- Ex.6 (Encontra num ficheiro delimitado por 2 campos por 1 "," | 1º Texto | 2º Número (2digitos) >
     // Problema: Encontra o primeiro maior valor e guarda numa variável. Se existir mais que uma pessoa com a mesma idade não dá print delas.
-    // Mas encontra o maior valor que é o propósito do exercício.
+    // Mas encontra o maior valor que é o propósito do exercício. Falta o JavaDoc /** **/
 
     public static void imprimirPessoaMaisVelha() throws FileNotFoundException {
 
@@ -162,9 +161,35 @@ public class BibliotecaDeFicheiros {
                 nomeMaisVelho = nome;
                 }
             //Opcional print de tudo (código feito para isso)
-            System.out.println("Nome: " + nome + "| Idade: " + idade);
+            System.out.println("Nome: " + nome + " | Idade: " + idade);
         }
-        System.out.println("\n A pessoa mais velha é:\nNome: " + nomeMaisVelho + "| Idade: " +  maiorIdade);
+        System.out.println("\nA pessoa mais velha é:\nNome: " + nomeMaisVelho + " | Idade: " +  maiorIdade);
+    }
+
+// ---------------------------------------------------------------------------------------------------------------------
+//EX.7
+// Escreva um programa que leia o conteúdo de um ficheiro de texto e imprima o número de linhas e o número de palavras presentes nesse ficheiro.
+
+    public static void lerNumeroLinhasEPalavras() throws FileNotFoundException {
+
+        // Abrir Ficheiro
+        File AbrirFicheiro = new File("C:\\Users\\User\\Desktop\\OneDrive - CESAE\\Ambiente de Trabalho\\Professor Vitor\\FichasJava\\PrimeiroProjeto\\src\\Ficheiros\\FichaPratica07\\exercicio_07.txt");
+
+        // Para ler o Ficheiro
+        Scanner scannerDeLinha = new Scanner(AbrirFicheiro);
+
+        int numeroLinhas = 0;
+        int somaCaracteres = 0;
+        int somaLinhas = 0;
+
+        while (scannerDeLinha.hasNextLine()) {
+            numeroLinhas++;
+            String stringCaracteresLinha = scannerDeLinha.nextLine();
+            int caracteresLinha = stringCaracteresLinha.length();
+            somaCaracteres += caracteresLinha;
+
+        }
+        System.out.println("Quantidade linhas: " + numeroLinhas + " | Quantidade de caracteres: " + somaCaracteres);
     }
 }
 
