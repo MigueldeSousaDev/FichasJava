@@ -191,6 +191,42 @@ public class BibliotecaDeFicheiros {
         }
         System.out.println("Quantidade linhas: " + numeroLinhas + " | Quantidade de caracteres: " + somaCaracteres);
     }
+
+
+// --------------------------------------------------
+//8. Escreva um programa que leia um ficheiro CSV contendo informações de vendas (tipo de produto, produto, quantidade vendida, valor unitario) e calcule o valor total das vendas.
+
+
+    public static void lerValorTotalVendas() throws FileNotFoundException {
+
+        // Abrir Ficheiro
+        File AbrirFicheiro = new File("C:\\Users\\User\\Desktop\\OneDrive - CESAE\\Ambiente de Trabalho\\Professor Vitor\\FichasJava\\PrimeiroProjeto\\src\\Ficheiros\\FichaPratica07\\exercicio_08.csv");
+
+        // Para ler o Ficheiro
+        Scanner scannerDeLinha = new Scanner(AbrirFicheiro);
+
+        double valorTotalVendas = 0;
+        double somaLinha;
+
+        // Faz com que ignore a 1ª linha do cabeçalho e corra o ciclo While
+        if (scannerDeLinha.hasNextLine()) {
+            scannerDeLinha.nextLine();  // consome a linha do cabeçalho
+        }
+
+        while (scannerDeLinha.hasNextLine()) {
+                String linha = scannerDeLinha.nextLine();
+                String[] itemsLinha = linha.split(",");
+                int quantidade = Integer.parseInt(itemsLinha[2]);
+                double precoUnidade = Double.parseDouble(itemsLinha[3]);
+
+
+                somaLinha = quantidade * precoUnidade;
+                valorTotalVendas +=somaLinha;
+        }
+
+        System.out.println("Valor total das vendas: " + valorTotalVendas + " €.");
+    }
+
 }
 
 
