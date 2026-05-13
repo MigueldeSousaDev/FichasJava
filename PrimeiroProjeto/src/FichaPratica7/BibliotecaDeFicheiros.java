@@ -140,7 +140,7 @@ public class BibliotecaDeFicheiros {
         // É possível refazer código com > int menorIdade = Integer.MIN_VALUE;    > Isto retira a necessidade do boolean para o 1º valor
 
         int idade = 0;
-        int maiorIdade = 0 ;
+        int maiorIdade = 0;
         String nomeMaisVelho = "";
         boolean primeiro = true;
 
@@ -155,15 +155,14 @@ public class BibliotecaDeFicheiros {
                 maiorIdade = idade;
                 nomeMaisVelho = nome;
                 primeiro = false;
-            }
-            else if (idade > maiorIdade) {
+            } else if (idade > maiorIdade) {
                 maiorIdade = idade;
                 nomeMaisVelho = nome;
-                }
+            }
             //Opcional print de tudo (código feito para isso)
             System.out.println("Nome: " + nome + " | Idade: " + idade);
         }
-        System.out.println("\nA pessoa mais velha é:\nNome: " + nomeMaisVelho + " | Idade: " +  maiorIdade);
+        System.out.println("\nA pessoa mais velha é:\nNome: " + nomeMaisVelho + " | Idade: " + maiorIdade);
     }
 
 // ---------------------------------------------------------------------------------------------------------------------
@@ -214,20 +213,27 @@ public class BibliotecaDeFicheiros {
         }
 
         while (scannerDeLinha.hasNextLine()) {
-                String linha = scannerDeLinha.nextLine();
-                String[] itemsLinha = linha.split(",");
-                int quantidade = Integer.parseInt(itemsLinha[2]);
-                double precoUnidade = Double.parseDouble(itemsLinha[3]);
+            String linha = scannerDeLinha.nextLine();
+            String[] itemsLinha = linha.split(",");
+            int quantidade = Integer.parseInt(itemsLinha[2]);
+            double precoUnidade = Double.parseDouble(itemsLinha[3]);
 
 
-                somaLinha = quantidade * precoUnidade;
-                valorTotalVendas +=somaLinha;
+            somaLinha = quantidade * precoUnidade;
+            valorTotalVendas += somaLinha;
         }
 
         System.out.println("Valor total das vendas: " + valorTotalVendas + " €.");
     }
 
-}
+// ------------------------------------------------------------------------------------------------------------------------------------
+
+
+    }
+
+
+
+
 
 
 
