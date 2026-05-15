@@ -16,7 +16,7 @@ public static int festivalgoerAuthorization(String caminhoFicheiro) throws FileN
 
         do {
             System.out.println("\n--- MENU --- \n----- FESTIVALGOER MENU -----\n");
-            System.out.println("1. New Registry (new festivalgoer | \n2. Search Available Camping Site | \n3. Print Festival Board | \n4. Print Stages' Graphics | \n5. Print Longest Concert | \n6. Print Festival Board per day | \n7. Print Board organized by Musical Gender | \n8. Musical Quiz | \n0. EXIT | \nChoose an Option:\n");
+            System.out.println("1. New Registry (new festivalgoer | \n2. Search Available Camping Site spots | \n3. Print Festival Board | \n4. Print Stages' Graphics | \n5. Print Longest Concert | \n6. Print Festival Board per day | \n7. Print Board organized by Musical Gender | \n8. Musical Quiz | \n0. EXIT | \nChoose an Option:\n");
             option = input.nextInt();
             input.nextLine(); // Clean Buffer
 
@@ -37,33 +37,17 @@ public static int festivalgoerAuthorization(String caminhoFicheiro) throws FileN
                     // GUARDAR NUMA VARIÁVEL OU STRING/ARRAY, NÃO PRECISO INSERIR NA MATRIZ, É UMA SIMULAÇÃO
                     break;
                 case 2:
-                    System.out.println("2. Verifying total Revenue and Tickets sold...");
-                    String artistaPesquisar = input.nextLine();
-                    pesquisarMusicasPorArtista(matrizCompleta,artistaPesquisar);
+                    System.out.println("2. Verifying available Camping spots...");
 
+                    // Lugares: 1 a 300 | All available places > Nºs triangulares multiplos de 5 até 300.
+                    // Programa Prints all available spots. Example: 1, 3, 6, 10, 15, 21. Não ultrapassar limite.
+                    // Print dos spots available
 
-                    // Prints total ammount of tickets and the total revenue invoiced by the festival (all days)
-                    // ªªªº PRECISA DE MATRIZ ººº TOTAL BILHETES + SOMA
                     break;
                 case 3:
-                    System.out.println("3. Accessing Festivalgoer details...");
-                    String artistaPesquisar = input.nextLine();
-                    pesquisarMusicasPorArtista(matrizCompleta,artistaPesquisar);
-                    // ºª Given an "idClient", print all info related to that festivalgoer in the following order:
-                    // name; contact; email; tickets bought; total spent money;
-                    // ºª Festivalgoerfound (see sheet for details)
+                    System.out.println("3. Accessing all Festival Artists...");
 
-                    //Exemplo:
-
-                    //> Insira o ID do festivaleiro: 1
-
-                    //***** FESTIVALEIRO ENCONTRADO *****
-                    //Nome: Vitor Santos
-                    //Contacto: 910000001
-                    //Email: vitor.santos@gmail.com
-                    //Bilhetes: - B00-001 | Sexta | Diário | 39.99 € - B00-003 | Domingo | Diário | 44.99 €
-                    //Total gasto: 84.98 €
-
+                    // Print all Festival artists, no duplicates
                     // ºªªªªª PRECISA DE MATRIZ
 
                     break;

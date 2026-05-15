@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18a5955f-7f1f-4c20-8471-6d1d8cebc054" name="Changes" comment="Working on Admin Menu">
-      <change afterPath="$PROJECT_DIR$/TrabalhoPratico/Projeto/CodeFestMiguel/src/Menu_FestivalGoer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrabalhoPratico/Projeto/CodeFestMiguel/src/Functions_Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/TrabalhoPratico/Projeto/CodeFestMiguel/src/Functions_Library.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrabalhoPratico/Projeto/CodeFestMiguel/src/Menu_Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/TrabalhoPratico/Projeto/CodeFestMiguel/src/Menu_Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrabalhoPratico/Projeto/CodeFestMiguel/src/Menu_Client.java" beforeDir="false" />
+    <list default="true" id="18a5955f-7f1f-4c20-8471-6d1d8cebc054" name="Changes" comment="Starting work on FestivalGoer Menu">
+      <change beforePath="$PROJECT_DIR$/TrabalhoPratico/Projeto/CodeFestMiguel/src/Menu_FestivalGoer.java" beforeDir="false" afterPath="$PROJECT_DIR$/TrabalhoPratico/Projeto/CodeFestMiguel/src/Menu_FestivalGoer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +120,15 @@
       <option name="project" value="LOCAL" />
       <updated>1778835483592</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Starting work on FestivalGoer Menu">
+      <option name="closed" value="true" />
+      <created>1778843539228</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1778843539228</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,6 +137,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initiating JavaProject for CodeFest" />
     <MESSAGE value="Working on Admin Menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working on Admin Menu" />
+    <MESSAGE value="Starting work on FestivalGoer Menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="Starting work on FestivalGoer Menu" />
   </component>
 </project>
