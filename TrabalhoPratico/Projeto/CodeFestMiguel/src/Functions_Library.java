@@ -4,7 +4,29 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
+
+    public static void consoleClear() {
+
+    // ** CLEARS THE CONSOLE FROM ENTER INPUTS **
+
+        // Import Scanner
+        Scanner input_ = new Scanner(System.in);
+
+        // Cleans the Scanner
+        System.out.println("(Press Enter to Return...)");
+        input_.nextLine(); // "Catches" the last "ENTER" from the last input
+        input_.nextLine(); // Will await for our input.
+        for (int i = 0; i < 100; i++) {
+            System.out.println();
+        }
+
+    }
+
+// ------------------------------------------------------------------------------------------
+
     public static void firstPrompt() throws FileNotFoundException {
+
+    // ** THE FIRST PROMPT FROM THE PROGRAM **
 
         // Initiate Program > Admin
         //                  > Customer
@@ -15,39 +37,39 @@ import java.util.Scanner;
         int opcao;
 
         do {
-            System.out.println("\n--- MENU --- \n----- Escolha o Tipo de Utilizador -----");
-            System.out.println("1. ADMIN | 2. FESTIVALEIRO: ");
-            System.out.println("2. Pesquisar por Nome de Artista");
-            System.out.println("0. Sair");
-
-            System.out.print("Escolha: ");
+            System.out.println("\n--- MENU --- \n----- Choose the Type of User -----");
+            System.out.println("1. ADMIN | \n2. FESTIVALGOER | \n 0. EXIT\nChoose an Option:\n");
             opcao = input.nextInt();
-
-            input.nextLine(); // Limpar o buffer
+            input.nextLine(); // Clean Buffer
 
             switch (opcao) {
                 case 1:
-                    System.out.println("Género Musical a pesquisar: ");
+                    System.out.println("Entering Admin Menu... ");
                     String generoPesquisar = input.nextLine();
-                    pesquisarMusicasPorGenero(matrizCompleta,generoPesquisar);
-                    // Chamar Função
+                    // ADMIN USER NAME + PASSWORD READ FUNCTION
+                    // Call Function
                     break;
                 case 2:
-                    System.out.println("Nome do Artista a pesquisar: ");
+                    System.out.println("Entering Festivalgoer Menu...");
                     String artistaPesquisar = input.nextLine();
                     pesquisarMusicasPorArtista(matrizCompleta,artistaPesquisar);
-                    // Chamar Função
+                    // FESTIVALGOER  USER NAME + PASSWORD READ FUNCTION
+                    // Call Function
                     break;
                 case 0:
-                    System.out.print("Opção 0 selecionada. A sair do programa.");
+                    System.out.print("Option 0 selected. Exiting program...");
                     break;
                 default:
-                    System.out.println("Opção inválida. Insira novamente o valor.");
+                    System.out.println("Invalid option. Insert a new valid option.");
             }
-            limparConsola();
-        } while (opcao != 0);
-    }
+            consoleClear();
 
+        } while (opcao != 0);
+
+
+
+    // The Menu must contain an "IF" function for ADMIN and for FESTIVALEIRO ---> Then call the function which will be created in other 2 separate packages.
+        // SWITCH ALREADY DOES THAT.
 
 
     }

@@ -4,17 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18a5955f-7f1f-4c20-8471-6d1d8cebc054" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/TrabalhoPratico/Projeto/CodeFestMiguel/src/Functions_Library.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrabalhoPratico/Projeto/CodeFestMiguel/src/Main_Initiator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrabalhoPratico/Projeto/CodeFestMiguel/src/Menu_Admin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrabalhoPratico/Projeto/CodeFestMiguel/src/Menu_Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrabalhoPratico/Projeto/untitled/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrabalhoPratico/Projeto/untitled/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrabalhoPratico/Projeto/untitled/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrabalhoPratico/Projeto/untitled/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="18a5955f-7f1f-4c20-8471-6d1d8cebc054" name="Changes" comment="Initiating JavaProject for CodeFest">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrabalhoPratico/Projeto/CodeFestMiguel/src/Biblioteca1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrabalhoPratico/Projeto/CodeFestMiguel/src/Functions_Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/TrabalhoPratico/Projeto/CodeFestMiguel/src/Functions_Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrabalhoPratico/Projeto/CodeFestMiguel/src/Menu_Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/TrabalhoPratico/Projeto/CodeFestMiguel/src/Menu_Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrabalhoPratico/Projeto/CodeFestMiguel/src/Menu_Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/TrabalhoPratico/Projeto/CodeFestMiguel/src/Menu_Client.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,9 +99,22 @@
       <option name="presentableId" value="Default" />
       <updated>1774910684477</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initiating JavaProject for CodeFest">
+      <option name="closed" value="true" />
+      <created>1778751297771</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1778751297771</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initiating JavaProject for CodeFest" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initiating JavaProject for CodeFest" />
   </component>
 </project>

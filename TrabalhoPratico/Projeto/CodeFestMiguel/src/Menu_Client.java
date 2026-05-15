@@ -1,9 +1,9 @@
-import java.io.FileNotFoundException;
-
 public class Menu_Cliente {
 
+import java.io.FileNotFoundException;
+import static Functions_Library.*;
 
-public static int contarLinhasFicheiro(String caminhoFicheiro) throws FileNotFoundException {
+public static int festivalgoerAuthorization(String caminhoFicheiro) throws FileNotFoundException {
 
 
 
