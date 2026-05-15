@@ -15,23 +15,23 @@ public class Menu_Admin {
 
             Scanner input = new Scanner(System.in);
 
-            int option;
+            int optionAdmin;
 
             do {
                 System.out.println("\n--- MENU --- \n----- ADMIN MENU -----");
                 System.out.println("1. Open Files | \n2. Total of Sold Tickets | \n3. Festivalgoar Search | \n4. Most Expensive Ticket | \n5. Best Festivalgoers | \n6.Ticket Search per Day | \n7. Revenue per type of ticket | \n8. Revenue per Day of Festival | \n0. EXIT | \nChoose an Option:\n");
-                option = input.nextInt();
+                optionAdmin = input.nextInt();
                 input.nextLine(); // Clean Buffer
 
 
-                switch (option) {
+                switch (optionAdmin) {
                     case 1:
 
                         System.out.println("Insert the file you want to access:\n1.Festival_Bilhetes.csv\n2.Festival_Cartaz.csv\nFestival_AdminLogin.csv\nFestival_Quiz.csv "");
-                        int answerSwitchOne = input.nextLine();
+                        int answerSwitchOneAdmin = input.nextInt();
 
                         // Invoke function with Switch
-                        adminSwitchOne(answerSwitchOne);
+                        adminSwitchOneFunction(answerSwitchOneAdmin);
                         break;
                     case 2:
                         System.out.println("2. Verifying total Revenue and Tickets sold...");
@@ -121,15 +121,15 @@ public class Menu_Admin {
                 }
                 consoleClear();
 
-            } while (option != 0); {
+            } while (optionAdmin != 0); {
         }
 
 // ----------------------------------------------------------------------------------------------------------------------------
 
 
-        public static void adminSwitchOne(int answerSwitchOne)
+        public static void adminSwitchOneFunction(int answerSwitchOneAdmin)
 
-        // Switch Case for Menu Option 1: Read CSV FILES
+        // Switch Case for Admin Menu Option 1: Read CSV FILES
 
         switch (answerSwitchOne) {
             case 1:
@@ -150,7 +150,8 @@ public class Menu_Admin {
                 break;
             case 0:
                 System.out.println("Returning to last Menu...");
-                // Como volto ao MENU anterior ??
+                // The other Switch in "Festivalgoer Menu" is inside a do - while and so, after executing this switch, it returns to the "2nd" main code which
+                // is the switched that prompted us to this function.
                 break;
             default:
                 System.out.println("Invalid option.");

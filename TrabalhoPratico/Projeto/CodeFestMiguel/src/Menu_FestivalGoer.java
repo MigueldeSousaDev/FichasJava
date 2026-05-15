@@ -1,4 +1,4 @@
-public class Menu_Cliente {
+public class Menu_FestivalGoer {
 
 import java.io.FileNotFoundException;
 import static Functions_Library.*;
@@ -6,22 +6,20 @@ import static Functions_Library.*;
 public static int festivalgoerAuthorization(String caminhoFicheiro) throws FileNotFoundException {
 
 
-
-
     public static void festivalGoerSelect() {
 
         Scanner input = new Scanner(System.in);
 
-        int option;
+        int optionGoer;
 
         do {
             System.out.println("\n--- MENU --- \n----- FESTIVALGOER MENU -----\n");
             System.out.println("1. New Registry (new festivalgoer | \n2. Search Available Camping Site spots | \n3. Print Festival Board | \n4. Print Stages' Graphics | \n5. Print Longest Concert | \n6. Print Festival Board per day | \n7. Print Board organized by Musical Gender | \n8. Musical Quiz | \n0. EXIT | \nChoose an Option:\n");
-            option = input.nextInt();
+            optionGoer = input.nextInt();
             input.nextLine(); // Clean Buffer
 
 
-            switch (option) {
+            switch (optionGoer) {
                 case 1:
                     System.out.println("1. Insert the following data for a new registry:");
 
@@ -49,36 +47,53 @@ public static int festivalgoerAuthorization(String caminhoFicheiro) throws FileN
 
                     // Print all Festival artists, no duplicates
                     // ºªªªªª PRECISA DE MATRIZ
-
                     break;
                 case 4:
-                    System.out.println("4. Most Expensive Ticket(s)...");
-                    String artistaPesquisar = input.nextLine();
-                    pesquisarMusicasPorArtista(matrizCompleta,artistaPesquisar);
-                    // Print the ticket(s) with biggest registered value on the file.
-                    // Must show : day; type of ticket; value
+                    System.out.println("4. Pick a Stage you wish to view:\n1. Main Stage \n2. Java Stage \n3. Commit Stage \n- Insert the Number:\n");
+                    int switchAnswerFourFestivalGoer = input.nextInt();
 
-                    // ººººº PRECISA MATRIZ
+                    festivalgoerSwitchFourFunction(switchAnswerFourFestivalGoer);
+
+                    // 1. Escolher Palco a Imprimir | 2. After choosing, imprimir STAGE.TXT (ler e imprimir)
+
+                    // Resolvo de forma semelhante ao AdminMenu Switch one!! Leio e imprimo.
                     break;
                 case 5:
-                    System.out.println("5. Finding the best Festivalgoers...");
-                    String artistaPesquisar = input.nextLine();
-                    pesquisarMusicasPorArtista(matrizCompleta,artistaPesquisar);
+                    System.out.println("5. Printing longest Concert(s)...");
 
-                    // Must print customer(s) who spent most cash at festival
-                    // Print: name; contact; email; total € spent; list of tickets bought by customer
+                    //PRINTS:
+                    //• artista
+                    //• dia
+                    //• hora
+                    //• palco
+                    //• género
+                    //• duração
 
                     // ºººººº PRECISA MATRIZ
                     break;
                 case 6:
-                    System.out.println("6. Checking Tickets sold by day (insert day)...");
+                    System.out.println("6. Select the week day (write full name)...");
+                    // Decidir se uso matriz ou switch (?) Não sei se dá switch pq tenho aceder
+                    // À matriz, mas já vejo isso
+
+                    System.out.println(" 'X' day has been selected. Showing information ...");
+
                     String artistaPesquisar = input.nextLine();
                     pesquisarMusicasPorArtista(matrizCompleta,artistaPesquisar);
 
-                    // Admin must insert the week day (friday, saturday) -> menu searches for file for that day
-                    // Must print: ticket id; festivalgoer name; contact; email; ticket type; € value;
+                    //• hora
+                    //• palco
+                    //• artista
+                    //• género
+                    //• duração
 
-                    // ºººº PRECISA MATRIZ
+                    //Exemplo:
+                    //> Dia a pesquisar: Sexta
+                    //***** CARTAZ DE SEXTA *****
+                    //18:00 | Palco Principal | Quim Barreiros | Popular | 60 min
+                    //20:00 | Palco Sunset | D.A.M.A | Pop | 75 min
+
+                    // ºººº PRECISA MATRIZ !
                     break;
                 case 7:
                     System.out.println("7. Checking revenue per type of ticket (insert ticket type)...");
@@ -108,9 +123,39 @@ public static int festivalgoerAuthorization(String caminhoFicheiro) throws FileN
             }
             consoleClear();
 
-        } while (option != 0); {
+        } while (optionGoer != 0); {
         }
 
 }
+
+// ---------------------------------------------------------------------------------------------------------------------
+
+    public static void festivalgoerSwitchFourFunction(int switchAnswerFourFestivalGoer)
+
+    // Switch Case for FestivalGoer Menu Option 4: Read TXT FILES
+
+    switch (switchAnswerFourFestivalGoer) {
+        case 1:
+            System.out.println("Printing file...\n\n");
+            printAndReadFileConsole("/Palco_Main.txt");
+            break;
+        case 2:
+            System.out.println("Printing file...\n\n");
+            printAndReadFileConsole("Palco_Java.txt");
+            break;
+        case 3:
+            System.out.println("Printing file...\n\n");
+            printAndReadFileConsole("Palco_Commit.txt");
+            break;
+        case 0:
+            System.out.println("Returning to last Menu...");
+            // The other Switch in "Festivalgoer Menu" is inside a do - while and so, after executing this switch, it returns to the "2nd" main code which
+            // is the switch that prompted us to this function.
+            break;
+        default:
+            System.out.println("Invalid option.");
+        // printAndReadFileConsole() can be found in Functions_Library
+    }
+
 
     }

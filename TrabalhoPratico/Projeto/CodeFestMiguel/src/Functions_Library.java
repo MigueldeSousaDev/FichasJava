@@ -1,9 +1,10 @@
-public class Biblioteca_Funcoes {
+public class Functions_Library {
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
+// ------------------------------------------------------------------------------------------
 
     public static void consoleClear() {
 
@@ -24,7 +25,7 @@ import java.util.Scanner;
 
 // ------------------------------------------------------------------------------------------
 
-    public static void firstPrompt() throws FileNotFoundException {
+    public static void firstPromptLogin() throws FileNotFoundException {
 
     // ** THE FIRST PROMPT FROM THE PROGRAM **
 
