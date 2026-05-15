@@ -48,8 +48,32 @@ import java.util.Scanner;
                     System.out.println("Insira o Username:");
                     String username = input.NextLine();
 
+                    if (validarUser(user, MatrixFicheiroAdmin)) {
+                        if (validarPass(pass, matrizFicheiroAdmin)) {
+                            abrirMenuAdministrador (ver função a colocar.)
+                        }
+                    }
+
+                    readFileCreateMatrixNoHeader(filePath, delimiter)  -> isto é meu
+                    -------
+                    Isto aqui é uma função externa
+
+                    boolean corresponde = false
+
+                    for (int i = 0; i<matriz.length; i++) {
+                        if (X equals (username, matriz[i][0])) {
+                            corresponde = true;
+                        }
+                    }
+                    return corresponde;
+
                     System.out.println("Insira o Password:");
                     String password = input.NextLine();
+                    ----
+
+                    // Preciso usar a Função Matriz COM O CABEÇALHO (EDITAR A MATRIX PRINCIPAL E RETIRAR CÓDIGO EXCESSO)
+
+
 
                     System.out.println("Entering Admin Menu... ");
                     String generoPesquisar = input.nextLine();
@@ -107,7 +131,7 @@ import java.util.Scanner;
 
 // --------------------------------------------------------------------------------------------------
 
-    // Creating Matrix Reads Files and Assigns Values.
+    // Creating Matrix Reads Files and Assigns Values -- (With Header) ...
 
     public static String[][] readFileCreateMatrixWithHeader(String filePathMatrix, String delimiter) throws FileNotFoundException {
 
@@ -133,7 +157,7 @@ import java.util.Scanner;
 
         //-----------------------
 
-        // 2. Transform Lines into Vector (with delimiter)
+        // 2. Transform Lines into Vector (with delimiter) - NEEDS TO DEFINE DELIMITER AT THE BEGGINING OF THE FUNCTION
         String firstLine = myLineScanner.nextLine();
         String[] itemsLine = firstLine.split(delimiter);
 
@@ -172,18 +196,80 @@ import java.util.Scanner;
                 //  both on the Vector as the Matrix, passes the value to the Matrix.
 
             }
-
             currentMatrixLine++;
         }
-
         myLineScanner.close();
-
         return readFileCreateMatrixWithHeader;
     }
 
+// ---------------------------------------------------------------------------------------------------------------------
 
+    // Creating Matrix Reads Files and Assigns Values --- ( No Header ) ...
 
+    public static String[][] readFileCreateMatrixNoHeader(String filePathMatrix, String delimiter) throws FileNotFoundException {
 
+        // Create delimiter when calling as file path (x,y)
+        File myFileMatrix = new File(filePathMatrix);
+        Scanner myLineScanner = new Scanner(myFileMatrix);
+
+        int lineCounter = 0;
+
+        // 1. Counting Lines of the File to Assign Matrix Size (IGNORING HEADER)
+        while (myLineScanner.hasNextLine()) {
+            myLineScanner.nextLine();
+            lineCounter++;
+        }
+        myLineScanner.close();
+        // Re-Open Scanner
+        myLineScanner = new Scanner(filePathMatrix);
+
+        //-----------------------
+
+        // 2. Transform Lines into Vector (with delimiter) - NEEDS TO DEFINE DELIMITER AT THE BEGGINING OF THE FUNCTION
+        String firstLine = myLineScanner.nextLine();
+        String[] itemsLine = firstLine.split(delimiter);
+
+        // 3. Gets Column's length (counter)
+        int columnsCounter = itemsLine.length;
+
+        // Reopens Scanner for full reading
+        myLineScanner.close();
+        myLineScanner = new Scanner(filePathMatrix);
+        // Ignore Header Again
+        myLineScanner.nextLine();
+
+        // 4. Create Matrix with Line Size + Column (not parsing yet)
+        String[][] readFileCreateMatrixNoHeader = new String[lineCounter][columnsCounter];
+
+        // 5. Fill in the Matrix ( Assigning values that are read )
+
+        int currentMatrixLine = 0;
+
+        while (myLineScanner.hasNextLine()) {
+
+            String line = myLineScanner.nextLine();
+            String[] eachLine = line.split(delimiter); // Creates an Array/Vector with 4 positions (for each line)
+            //String eachLine = [0, 1, 2, 3]
+
+            // "i" increments lines and columns. Definided as 0 above.
+            for (int i = 0; i < columnsCounter; i++) {
+                readFileCreateMatrixNoHeader[currentMatrixLine][i] = eachLine[i];
+                //            readFileCreateMatrixNoHeader[currentMatrixLine][0] = eachLine[0];
+                //            readFileCreateMatrixNoHeader[currentMatrixLine][1] = eachLine[1];
+                //            readFileCreateMatrixNoHeader[currentMatrixLine][2] = eachLine[2];
+                //            readFileCreateMatrixNoHeader[currentMatrixLine][3] = eachLine[3];
+
+                //  FOR > currentMatrixLine maintains 0 in this cicle; Assigns value of the content
+                //  at Array eachLine[i] to position 2 (i) of matrix [_][i]. At the same time it increments the value of "i"
+                //  both on the Vector as the Matrix, passes the value to the Matrix.
+            }
+            currentMatrixLine++;
+        }
+        myLineScanner.close();
+        return readFileCreateMatrixNoHeader;
+    }
+
+// -------------------------------------------------------------------------------------------------------------------------
 
 
 
