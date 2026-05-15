@@ -61,19 +61,46 @@ import java.util.Scanner;
                     break;
                 default:
                     System.out.println("Invalid option. Insert a new valid option.");
+
+                    // Falta imprimir o COPYRIGHT
             }
             consoleClear();
 
         } while (opcao != 0);
 
 
-
     // The Menu must contain an "IF" function for ADMIN and for FESTIVALEIRO ---> Then call the function which will be created in other 2 separate packages.
         // SWITCH ALREADY DOES THAT.
-
 
     }
 
 
+// -------------------------------------------------------------------------------------------------
+
+    // Reads and Prints file both on Admin and FestivalGoer for .CSV and .TXT files.
+    // It doesn't contain matrix, just scans
+
+    public static void printAndReadFileConsole(String filePath) throws FileNotFoundException {
+
+        File myFile = new File(filePath);
+        Scanner myLineScanner = new Scanner(myFile);
+
+        while (myLineScanner.hasNextLine()) {
+            String line = myLineScanner.nextLine();
+            System.out.println(line);
+        }
+        myLineScanner.close();
+    }
+
+// --------------------------------------------------------------------------------------------------
+
+    // CRIAR FUNÇÃO MATRIZ
+
+
+
+
+
+
 
 }
+

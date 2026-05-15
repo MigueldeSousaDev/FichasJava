@@ -6,35 +6,32 @@ public class Menu_Admin {
 
     public static int adminAuthorization() throws FileNotFoundException { // Retirar isto por ser biblioteca
 
+
+/ ---------------------------------------------------------------------------------------------
+
 // (1) 1st prompt inside "ADMIN MENU"
 
     public static void adminSelect() {
 
             Scanner input = new Scanner(System.in);
 
-            int opcao;
+            int option;
 
             do {
-                System.out.println("\n--- MENU --- \n----- Choose the Type of User -----");
+                System.out.println("\n--- MENU --- \n----- ADMIN MENU -----");
                 System.out.println("1. Open Files | \n2. Total of Sold Tickets | \n3. Festivalgoar Search | \n4. Most Expensive Ticket | \n5. Best Festivalgoers | \n6.Ticket Search per Day | \n7. Revenue per type of ticket | \n8. Revenue per Day of Festival | \n0. EXIT | \nChoose an Option:\n");
-                opcao = input.nextInt();
+                option = input.nextInt();
                 input.nextLine(); // Clean Buffer
 
 
-                switch (opcao) {
+                switch (option) {
                     case 1:
-                        System.out.println("Opening (insert file name)... ");
-                        String generoPesquisar = input.nextLine();
 
-                        // ºª ªº Pick 1 of these files and print it on console ºª ºª \\
+                        System.out.println("Insert the file you want to access:\n1.Festival_Bilhetes.csv\n2.Festival_Cartaz.csv\nFestival_AdminLogin.csv\nFestival_Quiz.csv "");
+                        int answerSwitchOne = input.nextLine();
 
-                        // Festival_Bilhetes.csv
-                        // Festival_Cartaz.csv
-                        // Festival_AdminLogin.csv
-                        // Festival_Quiz.csv
-
-
-
+                        // Invoke function with Switch
+                        adminSwitchOne(answerSwitchOne);
                         break;
                     case 2:
                         System.out.println("2. Verifying total Revenue and Tickets sold...");
@@ -43,7 +40,7 @@ public class Menu_Admin {
 
 
                         // Prints total ammount of tickets and the total revenue invoiced by the festival (all days)
-                        // Call Function
+                        // ªªªº PRECISA DE MATRIZ ººº TOTAL BILHETES + SOMA
                         break;
                     case 3:
                         System.out.println("3. Accessing Festivalgoer details...");
@@ -53,7 +50,19 @@ public class Menu_Admin {
                         // name; contact; email; tickets bought; total spent money;
                         // ºª Festivalgoerfound (see sheet for details)
 
-                        // Call Function
+                        //Exemplo:
+
+                        //> Insira o ID do festivaleiro: 1
+
+                        //***** FESTIVALEIRO ENCONTRADO *****
+                        //Nome: Vitor Santos
+                        //Contacto: 910000001
+                        //Email: vitor.santos@gmail.com
+                        //Bilhetes: - B00-001 | Sexta | Diário | 39.99 € - B00-003 | Domingo | Diário | 44.99 €
+                        //Total gasto: 84.98 €
+
+                        // ºªªªªª PRECISA DE MATRIZ
+
                         break;
                     case 4:
                         System.out.println("4. Most Expensive Ticket(s)...");
@@ -62,7 +71,7 @@ public class Menu_Admin {
                         // Print the ticket(s) with biggest registered value on the file.
                         // Must show : day; type of ticket; value
 
-                        // Call Function
+                        // ººººº PRECISA MATRIZ
                         break;
                     case 5:
                         System.out.println("5. Finding the best Festivalgoers...");
@@ -72,7 +81,7 @@ public class Menu_Admin {
                         // Must print customer(s) who spent most cash at festival
                         // Print: name; contact; email; total € spent; list of tickets bought by customer
 
-                        // Call Function
+                        // ºººººº PRECISA MATRIZ
                         break;
                     case 6:
                         System.out.println("6. Checking Tickets sold by day (insert day)...");
@@ -82,31 +91,70 @@ public class Menu_Admin {
                         // Admin must insert the week day (friday, saturday) -> menu searches for file for that day
                         // Must print: ticket id; festivalgoer name; contact; email; ticket type; € value;
 
-                        // Call Function
+                        // ºººº PRECISA MATRIZ
                         break;
                     case 7:
-                        System.out.println("Entering Festivalgoer Menu...");
+                        System.out.println("7. Checking revenue per type of ticket (insert ticket type)...");
                         String artistaPesquisar = input.nextLine();
                         pesquisarMusicasPorArtista(matrizCompleta,artistaPesquisar);
-                        // FESTIVALGOER  USER NAME + PASSWORD READ FUNCTION
-                        // Call Function
+
+                        // 1. Choose ticket type ºª | >>  2. Print:| no. tickets sold this type; total invoiced for this type of ticket.
+
+                        // ºººº PRECISA MATRIZ
                         break;
                     case 8:
-                        System.out.println("Entering Festivalgoer Menu...");
+                        System.out.println("8. Printing Revenue separated by Day...");
                         String artistaPesquisar = input.nextLine();
                         pesquisarMusicasPorArtista(matrizCompleta,artistaPesquisar);
-                        // FESTIVALGOER  USER NAME + PASSWORD READ FUNCTION
-                        // Call Function
+                        // ***** RECEITA POR DIA *****
+                        //Sexta | 45 bilhetes | 1799.55 €
+                        //Sábado | 52 bilhetes | 2439.48 €
+                        //Domingo| 28 bilhetes | 1299.72 €
+
+                        // ºººº PRECISA MATRIZ
                         break;
                     case 0:
                         System.out.print("Option 0 selected. Exiting program...");
                         break;
                     default:
-                        System.out.println("Invalid option. Insert a new valid option.");
+                        System.out.println("Invalid option. Insert a new valid option and get crazy.");
                 }
                 consoleClear();
 
-            } while (opcao != 0);
+            } while (option != 0); {
+        }
+
+// ----------------------------------------------------------------------------------------------------------------------------
+
+
+        public static void adminSwitchOne(int answerSwitchOne)
+
+        // Switch Case for Menu Option 1: Read CSV FILES
+
+        switch (answerSwitchOne) {
+            case 1:
+                System.out.println("Printing file...\n\n");
+                printAndReadFileConsole("/Festival_Bilhetes.csv");
+                break;
+            case 2:
+                System.out.println("Printing file...\n\n");
+                printAndReadFileConsole("Festival_Cartaz.csv");
+                break;
+            case 3:
+                System.out.println("Printing file...\n\n");
+                printAndReadFileConsole("Festival_AdminLogin.csv");
+                break;
+            case 4:
+                System.out.println("Printing file...\n\n");
+                printAndReadFileConsole(Festival_Quiz.csv);
+                break;
+            case 0:
+                System.out.println("Returning to last Menu...");
+                // Como volto ao MENU anterior ??
+                break;
+            default:
+                System.out.println("Invalid option.");
+
         }
 
 
