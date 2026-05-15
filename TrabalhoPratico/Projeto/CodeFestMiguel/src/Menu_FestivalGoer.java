@@ -48,14 +48,15 @@ public static int festivalgoerAuthorization(String caminhoFicheiro) throws FileN
                     // Print all Festival artists, no duplicates
                     // ºªªªªª PRECISA DE MATRIZ
                     break;
-                case 4:
+
+                case 4: // CHECK !!! DONE !!! Testar
+
                     System.out.println("4. Pick a Stage you wish to view:\n1. Main Stage \n2. Java Stage \n3. Commit Stage \n- Insert the Number:\n");
                     int switchAnswerFourFestivalGoer = input.nextInt();
 
                     festivalgoerSwitchFourFunction(switchAnswerFourFestivalGoer);
 
                     // 1. Escolher Palco a Imprimir | 2. After choosing, imprimir STAGE.TXT (ler e imprimir)
-
                     // Resolvo de forma semelhante ao AdminMenu Switch one!! Leio e imprimo.
                     break;
                 case 5:
@@ -96,22 +97,42 @@ public static int festivalgoerAuthorization(String caminhoFicheiro) throws FileN
                     // ºººº PRECISA MATRIZ !
                     break;
                 case 7:
-                    System.out.println("7. Checking revenue per type of ticket (insert ticket type)...");
+                    System.out.println("7. Insert the musical gender for the artists you wish to search...");
                     String artistaPesquisar = input.nextLine();
                     pesquisarMusicasPorArtista(matrizCompleta,artistaPesquisar);
 
-                    // 1. Choose ticket type ºª | >>  2. Print:| no. tickets sold this type; total invoiced for this type of ticket.
+                    //Deve apresentar:  ?? ver linhas acima n sao daqui codigo
+                    //• artista
+                    //• dia
+                    //• hora
+                    //• palco
+                    //• duração
+                    //Exemplo:
+                    //> Género a pesquisar: Rock
+                    //***** CONCERTOS DE ROCK *****
+                    //Xutos & Pontapés | Sábado | 21:30 | Palco Principal | 90 min
 
                     // ºººº PRECISA MATRIZ
                     break;
                 case 8:
-                    System.out.println("8. Printing Revenue separated by Day...");
+                    System.out.println("8. Inserir pergunta 1, pergunta 2, 3, 4 ...");
                     String artistaPesquisar = input.nextLine();
                     pesquisarMusicasPorArtista(matrizCompleta,artistaPesquisar);
-                    // ***** RECEITA POR DIA *****
-                    //Sexta | 45 bilhetes | 1799.55 €
-                    //Sábado | 52 bilhetes | 2439.48 €
-                    //Domingo| 28 bilhetes | 1299.72 €
+
+                    //Exemplo:
+                    //***** QUIZ MUSICAL ***** Baseado no ficheiro Festival_Quiz.csv
+                    //Pergunta 1:
+                    //Qual destes instrumentos pertence à família das cordas?
+                    //1. Bateria
+                    //2. Guitarra
+                    //3. Trompete
+                    //4. Flauta
+                    //> Resposta: 2
+                    //Resposta correta!
+                    //…
+                    //Quiz Terminado
+                    //Respostas Corretas: 3/5
+
 
                     // ºººº PRECISA MATRIZ
                     break;
@@ -132,7 +153,7 @@ public static int festivalgoerAuthorization(String caminhoFicheiro) throws FileN
 
     public static void festivalgoerSwitchFourFunction(int switchAnswerFourFestivalGoer)
 
-    // Switch Case for FestivalGoer Menu Option 4: Read TXT FILES
+    // Switch Case for FestivalGoer Menu Option 4: Read TXT FILES  || CHECK !! DONE!
 
     switch (switchAnswerFourFestivalGoer) {
         case 1:

@@ -25,7 +25,7 @@ public class Menu_Admin {
 
 
                 switch (optionAdmin) {
-                    case 1:
+                    case 1: // CHECK DONE!! Testar
 
                         System.out.println("Insert the file you want to access:\n1.Festival_Bilhetes.csv\n2.Festival_Cartaz.csv\nFestival_AdminLogin.csv\nFestival_Quiz.csv "");
                         int answerSwitchOneAdmin = input.nextInt();
@@ -129,12 +129,13 @@ public class Menu_Admin {
 
         public static void adminSwitchOneFunction(int answerSwitchOneAdmin)
 
-        // Switch Case for Admin Menu Option 1: Read CSV FILES
+        // Switch Case for Admin Menu Option 1: Read CSV FILES  ||| CHECK DONE !!
 
         switch (answerSwitchOne) {
             case 1:
                 System.out.println("Printing file...\n\n");
                 printAndReadFileConsole("/Festival_Bilhetes.csv");
+
                 break;
             case 2:
                 System.out.println("Printing file...\n\n");
