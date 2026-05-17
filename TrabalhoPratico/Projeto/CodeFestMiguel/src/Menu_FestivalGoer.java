@@ -1,6 +1,8 @@
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
 public class Menu_FestivalGoer {
 
-import java.io.FileNotFoundException;
 import static Functions_Library.*;
 
 public static int festivalgoerAuthorization(String caminhoFicheiro) throws FileNotFoundException {
@@ -158,15 +160,15 @@ public static int festivalgoerAuthorization(String caminhoFicheiro) throws FileN
     switch (switchAnswerFourFestivalGoer) {
         case 1:
             System.out.println("Printing file...\n\n");
-            printAndReadFileConsole("/Palco_Main.txt");
+            Functions_Library.printAndReadFileConsole("Palco_Main.txt");
             break;
         case 2:
             System.out.println("Printing file...\n\n");
-            printAndReadFileConsole("Palco_Java.txt");
+            Functions_Library.printAndReadFileConsole("Palco_Java.txt");
             break;
         case 3:
             System.out.println("Printing file...\n\n");
-            printAndReadFileConsole("Palco_Commit.txt");
+            Functions_Library.printAndReadFileConsole("Palco_Commit.txt");
             break;
         case 0:
             System.out.println("Returning to last Menu...");

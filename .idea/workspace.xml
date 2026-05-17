@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18a5955f-7f1f-4c20-8471-6d1d8cebc054" name="Changes" comment="Creating Matrix at Functions_Library">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="18a5955f-7f1f-4c20-8471-6d1d8cebc054" name="Changes" comment="Updating Login and Menu Admin">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrabalhoPratico/Projeto/CodeFestMiguel/src/Functions_Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/TrabalhoPratico/Projeto/CodeFestMiguel/src/Functions_Library.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrabalhoPratico/Projeto/CodeFestMiguel/src/Main_Initiator.java" beforeDir="false" afterPath="$PROJECT_DIR$/TrabalhoPratico/Projeto/CodeFestMiguel/src/Main_Initiator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TrabalhoPratico/Projeto/CodeFestMiguel/src/Menu_Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/TrabalhoPratico/Projeto/CodeFestMiguel/src/Menu_Admin.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -165,7 +162,15 @@
       <option name="project" value="LOCAL" />
       <updated>1778860904633</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Updating Login and Menu Admin">
+      <option name="closed" value="true" />
+      <created>1779020772219</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1779020772219</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,6 +193,7 @@
     <MESSAGE value="Starting work on FestivalGoer Menu" />
     <MESSAGE value="Updating work on FestivalGoer Menu" />
     <MESSAGE value="Creating Matrix at Functions_Library" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creating Matrix at Functions_Library" />
+    <MESSAGE value="Updating Login and Menu Admin" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updating Login and Menu Admin" />
   </component>
 </project>

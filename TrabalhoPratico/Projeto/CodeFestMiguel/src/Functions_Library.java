@@ -1,8 +1,17 @@
-public class Functions_Library {
-
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.sql.SQLOutput;
 import java.util.Scanner;
+
+public class Functions_Library {
+
+
+// INDEX:
+    // 1. SEARCH
+    // 2. LOGIN
+    // 3. CALCULATIONS
+    // 4. READINGS
+    // 5. Reading Matrixes (Header / No Header)
 
 // ------------------------------------------------------------------------------------------
 
@@ -41,11 +50,11 @@ import java.util.Scanner;
             System.out.println("\n--- MENU --- \n----- Choose the Type of User -----");
             System.out.println("1. ADMIN | \n2. FESTIVALGOER | \n 0. EXIT\nChoose an Option:\n");
             opcao = input.nextInt();
-//            input.nextLine(); // Clean Buffer - no need
+            input.nextLine();
 
             switch (opcao) {
                 case 1:
-                    String[][] adminMatrixCSV = readFileCreateMatrixNoHeader("/Festival_AdminLogin.csv",";");
+                    String[][] adminMatrixCSV = readFileCreateMatrixNoHeader("Festival_AdminLogin.csv",";");
                     // readFileCreateMatrixNoHeader(filePath, delimiter)
 
                     System.out.println("Insira o Username:");
@@ -61,6 +70,7 @@ import java.util.Scanner;
                         Menu_Admin.adminMenuOptions();
                     } else {
                         System.out.println("Invalid Log In!");
+                    }
 
                     // ADMIN USER NAME + PASSWORD READ FUNCTION
                     // Call Function
@@ -93,24 +103,7 @@ import java.util.Scanner;
 
 // -------------------------------------------------------------------------------------------------
 
-    // Reads and Prints file both on Admin and FestivalGoer for .CSV and .TXT files.
-    // It doesn't contain matrix, just scans
-
-    public static void printAndReadFileConsole(String filePath) throws FileNotFoundException {
-
-        File myFile = new File(filePath);
-        Scanner myLineScanner = new Scanner(myFile);
-
-        while (myLineScanner.hasnextLine()) {
-            String line = myLineScanner.nextLine();
-            System.out.println(line);
-        }
-        myLineScanner.close();
-    }
-
-// --------------------------------------------------------------------------------------------------
-
-// Authentication for Admin (all "Festival_AdminLogin.csv" users) are granted Admin rights
+    // Authentication for Admin (all "Festival_AdminLogin.csv" users) are granted Admin rights
 
     public static boolean adminLoginValidation(String username, String password, String[][]adminLoginMatrix) {
 
@@ -122,11 +115,25 @@ import java.util.Scanner;
         }
         return false;
     }
-    }
-
-
 
 // --------------------------------------------------------------------------------------------------
+
+    // Reads and Prints file both on Admin and FestivalGoer for .CSV and .TXT files.
+    // It doesn't contain matrix, just scans
+
+    public static void printAndReadFileConsole(String filePath) throws FileNotFoundException {
+
+        File myFile = new File(filePath);
+        Scanner myLineScanner = new Scanner(myFile);
+
+        while (myLineScanner.hasNextLine()) {
+            String line = myLineScanner.nextLine();
+            System.out.println(line);
+        }
+        myLineScanner.close();
+    }
+
+// ------------------------------------- 5. READ FILES AND CREATE MATRIX (Header / No Header -------------------------------------------
 
     // Creating Matrix Reads Files and Assigns Values -- (With Header) ...
 
@@ -141,8 +148,8 @@ import java.util.Scanner;
         // Ignore file Header
         myLineScanner.nextLine();
 
-        // 1. Counting Lines of the File to Assign Matrix Size (IGNORING HEADER)
-        while (myLineScanner.hasnextLine()) {
+        // a. Counting Lines of the File to Assign Matrix Size (IGNORING HEADER)
+        while (myLineScanner.hasNextLine()) {
             myLineScanner.nextLine();
             lineCounter++;
         }
@@ -154,11 +161,11 @@ import java.util.Scanner;
 
         //-----------------------
 
-        // 2. Transform Lines into Vector (with delimiter) - NEEDS TO DEFINE DELIMITER AT THE BEGGINING OF THE FUNCTION
+        // b. Transform Lines into Vector (with delimiter) - NEEDS TO DEFINE DELIMITER AT THE BEGGINING OF THE FUNCTION
         String firstLine = myLineScanner.nextLine();
         String[] itemsLine = firstLine.split(delimiter);
 
-        // 3. Gets Column's length (counter)
+        // c. Gets Column's length (counter)
         int columnsCounter = itemsLine.length;
 
         // Reopens Scanner for full reading
@@ -167,14 +174,14 @@ import java.util.Scanner;
         // Ignore Header Again
         myLineScanner.nextLine();
 
-        // 4. Create Matrix with Line Size + Column (not parsing yet)
+        // d. Create Matrix with Line Size + Column (not parsing yet)
         String[][] readFileCreateMatrixWithHeader = new String[lineCounter][columnsCounter];
 
-        // 5. Fill in the Matrix ( Assigning values that are read )
+        // e. Fill in the Matrix ( Assigning values that are read )
 
         int currentMatrixLine = 0;
 
-        while (myLineScanner.hasnextLine()) {
+        while (myLineScanner.hasNextLine()) {
 
             String line = myLineScanner.nextLine();
             String[] eachLine = line.split(delimiter); // Creates an Array/Vector with 4 positions (for each line)
@@ -211,8 +218,8 @@ import java.util.Scanner;
 
         int lineCounter = 0;
 
-        // 1. Counting Lines of the File to Assign Matrix Size (IGNORING HEADER)
-        while (myLineScanner.hasnextLine()) {
+        // a. Counting Lines of the File to Assign Matrix Size (IGNORING HEADER)
+        while (myLineScanner.hasNextLine()) {
             myLineScanner.nextLine();
             lineCounter++;
         }
@@ -222,25 +229,25 @@ import java.util.Scanner;
 
         //-----------------------
 
-        // 2. Transform Lines into Vector (with delimiter) - NEEDS TO DEFINE DELIMITER AT THE BEGGINING OF THE FUNCTION
+        // b. Transform Lines into Vector (with delimiter) - NEEDS TO DEFINE DELIMITER AT THE BEGGINING OF THE FUNCTION
         String firstLine = myLineScanner.nextLine();
         String[] itemsLine = firstLine.split(delimiter);
 
-        // 3. Gets Column's length (counter)
+        // c. Gets Column's length (counter)
         int columnsCounter = itemsLine.length;
 
         // Reopens Scanner for full reading
         myLineScanner.close();
         myLineScanner = new Scanner(filePathMatrix);
 
-        // 4. Create Matrix with Line Size + Column (not parsing yet)
+        // d. Create Matrix with Line Size + Column (not parsing yet)
         String[][] readFileCreateMatrixNoHeader = new String[lineCounter][columnsCounter];
 
-        // 5. Fill in the Matrix ( Assigning values that are read )
+        // e. Fill in the Matrix ( Assigning values that are read )
 
         int currentMatrixLine = 0;
 
-        while (myLineScanner.hasnextLine()) {
+        while (myLineScanner.hasNextLine()) {
 
             String line = myLineScanner.nextLine();
             String[] eachLine = line.split(delimiter); // Creates an Array/Vector with 4 positions (for each line)
@@ -264,12 +271,118 @@ import java.util.Scanner;
         return readFileCreateMatrixNoHeader;
     }
 
-// -------------------------------------------------------------------------------------------------------------------------
+// --------------------------------------- 2. CALCULATIONS (sum)---------------------------------------------------------------------------------------------------
+
+    public static void totalTicketsSold(String[][] ticketsMatrix) {
+
+        int totalTickets = ticketsMatrix.length;
+
+        double totalRevenue = 0;
+
+        for (int i = 0; i < ticketsMatrix.length; i++) {
+            totalRevenue += Double.parseDouble(ticketsMatrix[i][7]);
+        }
+
+    System.out.println("*** FESTIVAL REPORT ***\nTotal tickets sold: " + totalTickets + "\nTotal Revenue: " + totalRevenue + "€.");
+
+    }
+
+// ------------------------------------------------6. TICKET SEARCH ------------------------------------------------------------------------------------------
+
+    public static void searchTicketsByDay(String[][] ticketsMatrix, String daySearch) {
+
+        boolean found = false;
+
+        for (int i = 0; i < ticketsMatrix.length; i++) {
+            if (ticketsMatrix[i][5].equalsIgnoreCase(daySearch)) {
+                found = true;
+                System.out.println("***TICKETS FOR SELECT DAY: " + ticketsMatrix[i][5]) +"***\n" +
+                ticketsMatrix[i][0] + " | " + "\n" +
+                ticketsMatrix[i][2] + " | " + "\n" +
+                ticketsMatrix[i][3] + " | " + "\n" +
+                ticketsMatrix[i][4] + " | " + "\n" +
+                ticketsMatrix[i][6] + " | " + "\n" +
+                ticketsMatrix[i][7] + " €." + "\n");
+
+            //0. id do bilhete //2. nome do festivaleiro //3. contacto //4. email //6. tipo de bilhete //7. valor
+            }
+        }
+        else if (!found) {
+        System.out.println("No tickets found for that day.");
+        }
+    }
+// ------------------------------------------------6. Search Revenue per Type of Ticket (Menu_Admin) 7 --------------------------------------------------------------------------
+
+    public static void revenuePerTicketType(String[][] ticketsMatrix, String ticketType) {
+
+        // Ticket Types: Backstage | VIP | Daily = Matrix[i][6] -- > Searches by Ticket Type; 1. Number (sum) of Tickets Sold (by type) and | 2. Total (Sum) of the € those Tickets ammounted
+
+    int ticketCounter = 0;
+    double accumulatedValue=0;
+    boolean found = false;
+
+    for (int i = 0; i < ticketsMatrix.length; i++) {
+        if (ticketsMatrix[i][6].equalsIgnoreCase(ticketType)) {
+            found = true;
+            ticketCounter +=;
+            accumulatedValue += Double.parseDouble(ticketsMatrix[i][7]);
+        }
+    }
+        if (!found) {
+        System.out.println("No tickets found for this type.");
+        } else {
+            System.out.println("\n*** Ticket Type Report ***\nTicket Type: " + ticketType + "\nTickets Sold: " + ticketCounter + "\nTotal Revenue: " + accumulatedValue);
+        }
+    }
+
+// ----------------------------------------------- 8. Total Revenue per Day of Festival (Menu Admin )-----------
+
+    public static void revenuePerDay(String[][] ticketsMatrix) {
+
+        int fridayTickets = 0;
+        double fridayRevenue = 0;
+        int saturdayTickets = 0;
+        double saturdayRevenue = 0;
+        int sundayTickets = 0;
+        double sundayRevenue = 0;
+
+        for (int i = 0; i < ticketsMatrix.length; i++) {
+            if (ticketsMatrix[i][5].equalsIgnoreCase("Sexta")) {
+                fridayTickets++;
+                fridayRevenue += Double.parseDouble(ticketsMatrix[i][7]);
+            }
+            if (ticketsMatrix[i][5].equalsIgnoreCase("Sábado")) {
+                saturdayTickets++;
+                saturdayRevenue += Double.parseDouble(ticketsMatrix[i][7]);
+            }
+            if (ticketsMatrix[i][5].equalsIgnoreCase("Domingo")) {
+                sundayTickets++;
+                sundayRevenue += Double.parseDouble(ticketsMatrix[i][7]);
+            }
+        }
+
+        System.out.println(
+                "\n***** REVENUE PER DAY *****" +
+                "\nFriday Tickets Sold: " + fridayTickets + "\nFriday Revenue: " + fridayRevenue + " €.\n" +
+                "\nSaturday Tickets Sold: " + saturdayTickets + "\nSaturday Revenue: " + saturdayRevenue + " €.\n" +
+                "\nSunday Tickets Sold: " + sundayTickets + "\nSunday Revenue: " + sundayRevenue + " €."
+        );
+    }
+
+// --------------------------- 4. Most Expensive Ticket (Menu Admin)
+
+
+    }
 
 
 
 
 
 
-}
+
+
+
+
+
+
 
