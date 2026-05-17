@@ -25,7 +25,7 @@ import java.util.Scanner;
 
 // ------------------------------------------------------------------------------------------
 
-    public static void firstPromptLogin() throws FileNotFoundException {
+    public static void firstPromptLogin(String[][]adminLoginValidation) throws FileNotFoundException {
 
     // ** THE FIRST PROMPT FROM THE PROGRAM **
 
@@ -41,42 +41,27 @@ import java.util.Scanner;
             System.out.println("\n--- MENU --- \n----- Choose the Type of User -----");
             System.out.println("1. ADMIN | \n2. FESTIVALGOER | \n 0. EXIT\nChoose an Option:\n");
             opcao = input.nextInt();
-            input.nextLine(); // Clean Buffer
+//            input.nextLine(); // Clean Buffer - no need
 
             switch (opcao) {
                 case 1:
+                    String[][] adminMatrixCSV = readFileCreateMatrixNoHeader("/Festival_AdminLogin.csv",";");
+                    // readFileCreateMatrixNoHeader(filePath, delimiter)
+
                     System.out.println("Insira o Username:");
-                    String username = input.NextLine();
-
-                    if (validarUser(user, MatrixFicheiroAdmin)) {
-                        if (validarPass(pass, matrizFicheiroAdmin)) {
-                            abrirMenuAdministrador (ver função a colocar.)
-                        }
-                    }
-
-                    readFileCreateMatrixNoHeader(filePath, delimiter)  -> isto é meu
-                    -------
-                    Isto aqui é uma função externa
-
-                    boolean corresponde = false
-
-                    for (int i = 0; i<matriz.length; i++) {
-                        if (X equals (username, matriz[i][0])) {
-                            corresponde = true;
-                        }
-                    }
-                    return corresponde;
+                    String username = input.nextLine();
 
                     System.out.println("Insira o Password:");
-                    String password = input.NextLine();
-                    ----
+                    String password = input.nextLine();
 
-                    // Preciso usar a Função Matriz COM O CABEÇALHO (EDITAR A MATRIX PRINCIPAL E RETIRAR CÓDIGO EXCESSO)
+                    boolean validLogin = adminLoginValidation(username, password, adminMatrixCSV);
 
+                    if (validLogin) { // If true, execute, else print and return to loop
+                        System.out.println("\nLogged In successfully!\n Entering Admin Menu...");
+                        Menu_Admin.adminMenuOptions();
+                    } else {
+                        System.out.println("Invalid Log In!");
 
-
-                    System.out.println("Entering Admin Menu... ");
-                    String generoPesquisar = input.nextLine();
                     // ADMIN USER NAME + PASSWORD READ FUNCTION
                     // Call Function
                     break;
@@ -116,7 +101,7 @@ import java.util.Scanner;
         File myFile = new File(filePath);
         Scanner myLineScanner = new Scanner(myFile);
 
-        while (myLineScanner.hasNextLine()) {
+        while (myLineScanner.hasnextLine()) {
             String line = myLineScanner.nextLine();
             System.out.println(line);
         }
@@ -126,6 +111,18 @@ import java.util.Scanner;
 // --------------------------------------------------------------------------------------------------
 
 // Authentication for Admin (all "Festival_AdminLogin.csv" users) are granted Admin rights
+
+    public static boolean adminLoginValidation(String username, String password, String[][]adminLoginMatrix) {
+
+        for (int i = 0; i < adminLoginMatrix.length; i++) {
+            if (username.equals(adminLoginMatrix[i][0]) &&
+                    password.equals(adminLoginMatrix[i][1])) {
+                return true;
+            }
+        }
+        return false;
+    }
+    }
 
 
 
@@ -145,7 +142,7 @@ import java.util.Scanner;
         myLineScanner.nextLine();
 
         // 1. Counting Lines of the File to Assign Matrix Size (IGNORING HEADER)
-        while (myLineScanner.hasNextLine()) {
+        while (myLineScanner.hasnextLine()) {
             myLineScanner.nextLine();
             lineCounter++;
         }
@@ -177,7 +174,7 @@ import java.util.Scanner;
 
         int currentMatrixLine = 0;
 
-        while (myLineScanner.hasNextLine()) {
+        while (myLineScanner.hasnextLine()) {
 
             String line = myLineScanner.nextLine();
             String[] eachLine = line.split(delimiter); // Creates an Array/Vector with 4 positions (for each line)
@@ -215,7 +212,7 @@ import java.util.Scanner;
         int lineCounter = 0;
 
         // 1. Counting Lines of the File to Assign Matrix Size (IGNORING HEADER)
-        while (myLineScanner.hasNextLine()) {
+        while (myLineScanner.hasnextLine()) {
             myLineScanner.nextLine();
             lineCounter++;
         }
@@ -235,8 +232,6 @@ import java.util.Scanner;
         // Reopens Scanner for full reading
         myLineScanner.close();
         myLineScanner = new Scanner(filePathMatrix);
-        // Ignore Header Again
-        myLineScanner.nextLine();
 
         // 4. Create Matrix with Line Size + Column (not parsing yet)
         String[][] readFileCreateMatrixNoHeader = new String[lineCounter][columnsCounter];
@@ -245,7 +240,7 @@ import java.util.Scanner;
 
         int currentMatrixLine = 0;
 
-        while (myLineScanner.hasNextLine()) {
+        while (myLineScanner.hasnextLine()) {
 
             String line = myLineScanner.nextLine();
             String[] eachLine = line.split(delimiter); // Creates an Array/Vector with 4 positions (for each line)

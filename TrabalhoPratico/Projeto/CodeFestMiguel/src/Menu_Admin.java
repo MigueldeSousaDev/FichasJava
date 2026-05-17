@@ -11,9 +11,13 @@ public class Menu_Admin {
 
 // (1) 1st prompt inside "ADMIN MENU"
 
-    public static void adminSelect() {
+    public static void adminMenuOptions() {
 
             Scanner input = new Scanner(System.in);
+
+            String[][] matrizBilhetes = readFileCreateMatrixWithHeader("Festival_Bilhetes.csv",";");
+
+
 
             int optionAdmin;
 
